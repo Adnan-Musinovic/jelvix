@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Hairline&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+  width: 100%; }
+
+body {
+  background-color: #a6a6a6; }
+
+.wrapper {
+  width: 90%;
+  max-width: 160rem;
+  display: flex;
+  margin: 0% auto; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400; }
+
+a {
+  text-decoration: none; }
+
+.logo {
+  font-family: 'Bungee Hairline', cursive;
+  font-size: 3.6rem;
+  color: #fff; }
+
+.nav--link {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 500; }
+
+.btn {
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-transform: uppercase; }
+  .btn--primary {
+    color: #262626; }
+
+.btn {
+  display: inline-block;
+  padding: 1.6rem 3.2rem;
+  transition: background-color .5s linear;
+  position: relative;
+  width: 17rem;
+  height: 5rem;
+  overflow: hidden; }
+  .btn::after {
+    content: attr(data-hover);
+    position: absolute;
+    top: 36%;
+    left: 25%;
+    transition: all .3s ease-in-out;
+    display: inline-block; }
+  .btn::before {
+    content: attr(data-hover);
+    position: absolute;
+    top: -35%;
+    left: 25%;
+    transition: all .3s ease-in-out;
+    display: inline-block; }
+  .btn:hover::after {
+    top: 120%; }
+  .btn:hover::before {
+    top: 36%; }
+  .btn--primary {
+    background-color: #fff;
+    margin-top: -1.4rem; }
+    .btn--primary:hover {
+      background-color: #eee; }
+
+.header {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: 2;
+  width: 100%; }
+  .header .wrapper {
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem; }
+
+ul {
+  list-style: none; }
+
+.nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.nav li:not(:last-child) {
+  margin-right: 3.5rem; }
+
+.nav--link {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 1.4rem; }
+  .nav--link::after, .nav--link::before {
+    content: '';
+    position: absolute;
+    bottom: 0%;
+    height: .2rem;
+    width: 0%;
+    background-color: #fff;
+    transition: width .3s ease-in-out; }
+  .nav--link::after {
+    right: 50%; }
+  .nav--link::before {
+    left: 50%; }
+  .nav--link:hover::after, .nav--link:hover::before {
+    width: 50%; }

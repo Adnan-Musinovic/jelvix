@@ -1,0 +1,50 @@
+ul {
+    list-style: none;
+}
+
+.nav {
+    & ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    & li {
+        &:not(:last-child) {
+            margin-right: 3.5rem;
+        }
+    }
+
+    &--link {
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        padding-bottom: 1.4rem;
+
+        &::after,
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: 0%;
+            height: .2rem;
+            width: 0%;
+            background-color: $color-white;
+            transition: width .3s ease-in-out;
+        }
+
+        &::after {
+            right: 50%;
+        }
+
+        &::before {
+            left: 50%;
+        }
+
+        &:hover {
+            &::after,
+            &::before {
+                width: 50%;
+            }
+        }
+    }
+}
