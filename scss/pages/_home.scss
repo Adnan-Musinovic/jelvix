@@ -28,6 +28,7 @@
     }
 }
 
+//set up team
 .set-up-team {
     background-color: $color-blue;
     padding: 10rem 0rem;
@@ -48,4 +49,83 @@
         }
     }
 
+}
+
+.we-work-with {
+    padding: 10rem 0rem;
+    height: 49rem;
+    //position: relative;
+
+    & .wrapper {
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 43%;
+        height: 49rem;
+        position: relative;
+    }
+
+    &__sponsors {
+        display: grid;
+        grid-template-columns: repeat(4, 12.5rem);
+        grid-template-rows: repeat(2, 3.5rem);
+        row-gap: 6rem;
+        column-gap: 3.5rem;
+        margin-top: 5.5rem;
+        align-items: center;
+
+        & img {
+            object-fit: cover;
+        }
+    }
+
+    &__image__container {
+        height: 69rem;
+        width: 50%;
+        /*position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%);*/
+    }
+
+    &__image__content {
+        background-color: $color-black;
+        height: 100%;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+
+        & img {
+            position: relative;
+            z-index: 5;
+        }
+        
+        & .block {
+            height: 35rem;
+            width: 14rem;
+            background-color: $color-white;
+            position: absolute;
+            left: 0%;
+            bottom: 10rem;
+            z-index: 2;
+        }
+
+        & img {
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            z-index: 1;
+        }
+    }
 }
