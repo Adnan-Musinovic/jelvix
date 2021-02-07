@@ -69,3 +69,16 @@ a {
         font-size: 1.4rem;
     }
 }
+
+//how it works
+.how-it-works {
+    & h2 {
+        font-size: 4rem;
+    }
+
+    & p {
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: #464646;
+    }
+}

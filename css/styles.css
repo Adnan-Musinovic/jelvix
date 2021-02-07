@@ -66,6 +66,14 @@ a {
     font-weight: 500;
     font-size: 1.4rem; }
 
+.how-it-works h2 {
+  font-size: 4rem; }
+
+.how-it-works p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #464646; }
+
 .btn {
   display: inline-block;
   padding: 1.6rem 3.2rem;
@@ -251,3 +259,41 @@ ul {
       width: 100%;
       object-fit: cover;
       z-index: 1; }
+
+.how-it-works {
+  background-color: #efefef;
+  padding: 10rem 0rem; }
+  .how-it-works .wrapper {
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column; }
+  .how-it-works .step-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 6rem;
+    border-bottom: 0.3rem solid #262626; }
+    .how-it-works .step-list .steps {
+      padding: 0rem 5rem 2.5rem 5rem;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      position: relative; }
+      .how-it-works .step-list .steps::before {
+        content: '';
+        position: absolute;
+        left: 0%;
+        bottom: 0%;
+        height: 100%;
+        width: 1.5rem;
+        background-color: #b9b6b6; }
+      .how-it-works .step-list .steps::after {
+        content: '';
+        position: absolute;
+        left: 0%;
+        bottom: -1.6rem;
+        height: 1.5rem;
+        width: 1.5rem;
+        background: #262626; }
