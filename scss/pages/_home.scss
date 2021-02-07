@@ -27,3 +27,25 @@
         object-fit: cover;
     }
 }
+
+.set-up-team {
+    background-color: $color-blue;
+    padding: 10rem 0rem;
+
+    & .wrapper {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        & p {
+            width: 65rem;
+        }
+    }
+
+}
