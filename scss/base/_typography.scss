@@ -82,3 +82,16 @@ a {
         color: #464646;
     }
 }
+
+//we-take-care-of
+.we-take-care-of {
+    & h2 {
+        font-size: 4rem;
+    }
+
+
+    & h5 {
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+}

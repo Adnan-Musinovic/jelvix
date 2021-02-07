@@ -178,3 +178,18 @@
         }
     }
 }
+
+//we take care of
+.we-take-care-of {
+    background-color: $color-black;
+    color: $color-white;
+    padding: 10rem 0rem;
+
+    & .wrapper {
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    
+}

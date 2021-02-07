@@ -74,6 +74,13 @@ a {
   font-weight: 400;
   color: #464646; }
 
+.we-take-care-of h2 {
+  font-size: 4rem; }
+
+.we-take-care-of h5 {
+  font-size: 1.6rem;
+  font-weight: 500; }
+
 .btn {
   display: inline-block;
   padding: 1.6rem 3.2rem;
@@ -151,6 +158,25 @@ ul {
     left: 50%; }
   .nav--link:hover::after, .nav--link:hover::before {
     width: 50%; }
+
+.grid {
+  display: grid; }
+
+.we-take-care-of .grid {
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  row-gap: 4rem;
+  margin-top: 6rem; }
+  .we-take-care-of .grid__item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+    .we-take-care-of .grid__item .img--box {
+      background-color: #fff;
+      height: 8rem;
+      width: 8rem;
+      padding: 1.5rem;
+      margin-right: 3rem; }
 
 .hero {
   height: 100%;
@@ -297,3 +323,12 @@ ul {
         height: 1.5rem;
         width: 1.5rem;
         background: #262626; }
+
+.we-take-care-of {
+  background-color: #262626;
+  color: #fff;
+  padding: 10rem 0rem; }
+  .we-take-care-of .wrapper {
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column; }
