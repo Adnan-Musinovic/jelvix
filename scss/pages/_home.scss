@@ -1,0 +1,29 @@
+.hero {
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+    &::after {
+        content: '';
+        @include full-absolute;
+        background-color: rgba(#000, .8);
+        z-index: 1;
+    }
+
+    & .wrapper {
+        height: 85%;
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        z-index: 3;
+        transform: translateX(-50%);
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+
+    & video {
+        @include full-absolute;
+        z-index: 1;
+        object-fit: cover;
+    }
+}
