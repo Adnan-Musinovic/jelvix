@@ -54,6 +54,14 @@ a {
     }
 }
 
+//we work with
+.we-work-with {
+    & h2 {
+        font-size: 4rem;
+        margin-bottom: 3rem;
+    }
+}
+
 //set up team
 .set-up-team {
     color: $color-white;
@@ -74,6 +82,7 @@ a {
 .how-it-works {
     & h2 {
         font-size: 4rem;
+        margin-bottom: 3rem;
     }
 
     & p {
@@ -89,9 +98,17 @@ a {
         font-size: 4rem;
     }
 
-
     & h5 {
         font-size: 1.6rem;
         font-weight: 500;
+    }
+}
+
+//highlights
+.highlights {
+    & h2 {
+        color: $color-white;
+        font-size: 4rem;
+        margin-bottom: 6rem;
     }
 }

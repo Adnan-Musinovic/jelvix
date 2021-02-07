@@ -19,7 +19,7 @@
     &::before {
         content: attr(data-hover);
         position: absolute;
-        top: -35%;
+        top: -100%;
         left: 25%;
         transition: all .3s ease-in-out;
         display: inline-block;

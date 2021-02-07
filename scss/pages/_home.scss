@@ -80,6 +80,7 @@
         column-gap: 3.5rem;
         margin-top: 5.5rem;
         align-items: center;
+        margin-top: 6rem;
 
         & img {
             object-fit: cover;
@@ -183,7 +184,7 @@
 .we-take-care-of {
     background-color: $color-black;
     color: $color-white;
-    padding: 10rem 0rem;
+    padding: 10rem 0rem 20rem 0rem;
 
     & .wrapper {
         justify-content: space-between;
@@ -191,5 +192,34 @@
         flex-direction: column;
     }
 
-    
+}
+
+//highlights
+.highlights {
+    margin-top: -10rem;
+
+    &__content {
+        background-image: url(../../images/highlight-bg.jpg);
+        background-attachment: fixed;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        padding: 10rem 0rem;
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+
+        &::after {
+            content: '';
+            @include full-absolute;
+            z-index: -1;
+            background-color: rgba($color-blue, .9);
+        }
+    }
+
 }
