@@ -112,3 +112,18 @@ a {
         margin-bottom: 6rem;
     }
 }
+
+//benefits
+.benefits {
+    & h3 {
+        font-size: 1.8rem;
+        margin-bottom: 1.556em;
+        letter-spacing: 1px;
+    }
+
+    & p {
+        line-height: 1.6;
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+}
