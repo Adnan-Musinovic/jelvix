@@ -276,3 +276,22 @@
         }
     }
 }
+
+//awards
+.awards {
+    background-color: $color-blue;
+    padding: 10rem 0rem;
+
+    &__item {
+        height: 12rem;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        & img {
+            height: 100%;
+            width: auto;
+            object-fit: cover;
+        }
+    }
+}

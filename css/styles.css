@@ -414,3 +414,16 @@ ul {
       height: 100%;
       width: 100%;
       object-fit: cover; }
+
+.awards {
+  background-color: #3f60fa;
+  padding: 10rem 0rem; }
+  .awards__item {
+    height: 12rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%; }
+    .awards__item img {
+      height: 100%;
+      width: auto;
+      object-fit: cover; }
