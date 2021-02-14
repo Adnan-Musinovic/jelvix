@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&display=swap');
 
 html {
     font-size: 62.5%;
@@ -9,6 +8,25 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 1.6rem;
     font-weight: 400;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 700;
+}
+
+.heading--secondary {
+    font-size: 5.4rem;
+    margin-bottom: .540em;
+
+    &--light {
+        color: $color-white;
+    }
+
+}
+
+.paragraph {
+    font-size: 1.6rem;
+    line-height: 1.6;
 }
 
 a {
@@ -126,4 +144,9 @@ a {
         font-size: 1.5rem;
         font-weight: 300;
     }
+}
+
+//case-studies
+.case-studies {
+    color: $color-white;
 }

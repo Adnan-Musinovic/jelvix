@@ -295,3 +295,17 @@
         }
     }
 }
+
+//case studies
+.case-studies {
+    background-color: $color-black;
+    padding: 10rem 0rem;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 49rem;
+    }
+}
