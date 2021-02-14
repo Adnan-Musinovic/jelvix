@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Hairline&display=swap");
 * {
   margin: 0%;
   padding: 0%;
@@ -11,6 +12,9 @@ html, body {
 body {
   background-color: #fff; }
 
+img {
+  vertical-align: bottom; }
+
 .wrapper {
   width: 93%;
   max-width: 160rem;
@@ -21,6 +25,7 @@ html {
   font-size: 62.5%; }
 
 body {
+  color: #252525;
   font-family: 'Roboto', sans-serif;
   font-size: 1.6rem;
   font-weight: 400; }
@@ -33,6 +38,11 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: .540em; }
   .heading--secondary--light {
     color: #fff; }
+
+h3 {
+  font-size: 3.8rem;
+  line-height: 1.25;
+  margin-bottom: .948em; }
 
 .paragraph {
   font-size: 1.6rem;
@@ -116,6 +126,11 @@ a {
 .case-studies {
   color: #fff; }
 
+.slider--paragraph {
+  line-height: 1.4; }
+  .slider--paragraph:not(:last-child) {
+    margin-bottom: 2rem; }
+
 .btn {
   display: inline-block;
   padding: 1.6rem 3.2rem;
@@ -151,6 +166,56 @@ a {
     background-color: #3f60fa; }
     .btn--secondary:hover {
       background-color: #2146eb; }
+
+.slider {
+  margin: 0 auto;
+  max-width: 1600px;
+  position: relative; }
+  .slider__first {
+    max-width: 1600px; }
+    .slider__first .slide {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      position: relative; }
+      .slider__first .slide--2, .slider__first .slide--3, .slider__first .slide--4 {
+        display: none; }
+      .slider__first .slide__content {
+        width: 78.5rem;
+        height: 65rem;
+        padding: 8rem;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        position: relative;
+        z-index: 2; }
+      .slider__first .slide__image {
+        position: absolute;
+        top: -12rem;
+        right: 0%;
+        z-index: 1;
+        width: 90rem;
+        height: 77rem;
+        padding-bottom: 4rem; }
+        .slider__first .slide__image img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover; }
+  .slider .controls {
+    height: 8rem;
+    width: 18.7rem;
+    background-color: #252525;
+    position: absolute;
+    left: 50%;
+    bottom: 0rem;
+    z-index: 5;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; }
 
 .header {
   position: absolute;
@@ -445,7 +510,9 @@ ul {
 
 .case-studies {
   background-color: #252525;
-  padding: 10rem 0rem; }
+  padding: 10rem 0rem;
+  width: 100%;
+  max-width: 1600px; }
   .case-studies__content {
     display: flex;
     justify-content: space-between;

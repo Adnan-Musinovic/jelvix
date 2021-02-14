@@ -13,6 +13,10 @@ body {
     background-color: $color-white;
 }
 
+img {
+    vertical-align: bottom;
+}
+
 .wrapper {
     width: 93%;
     max-width: 160rem;

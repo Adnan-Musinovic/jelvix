@@ -300,6 +300,8 @@
 .case-studies {
     background-color: $color-black;
     padding: 10rem 0rem;
+    width: 100%;
+    max-width: 1600px;
 
     &__content {
         display: flex;

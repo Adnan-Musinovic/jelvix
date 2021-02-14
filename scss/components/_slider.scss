@@ -1,0 +1,65 @@
+.slider {
+    margin: 0 auto;
+    max-width: 1600px;
+    position: relative;
+    &__first {
+        max-width: 1600px;
+
+        & .slide {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            position: relative;
+
+            &--2,
+            &--3,
+            &--4 {
+                display: none;
+            }
+
+            &__content {
+                width: 78.5rem;
+                height: 65rem;
+                padding: 8rem;
+                background-color: $color-white;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+                position: relative;
+                z-index: 2;
+            }
+
+            &__image {
+                position: absolute;
+                top: -12rem;
+                right: 0%;
+                z-index: 1;
+                width: 90rem;
+                height: 77rem;
+                padding-bottom: 4rem;
+
+                & img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
+    & .controls {
+        height: 8rem;
+        width: 18.7rem;
+        background-color: $color-black;
+        position: absolute;
+        left: 50%;
+        bottom: 0rem;
+        z-index: 5;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $color-white;
+    }
+}
